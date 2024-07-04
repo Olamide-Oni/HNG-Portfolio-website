@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ohni's Portfolio</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="time-container">
+                <div class="time" id="time" data-testid="currentTimeUTC"></div>
+                <div class="day" id="day" data-testid="currentDay"></div>
+            </div>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#hero-section">Home</a></li>
+                    <li><a href="#projects-section">Projects</a></li>
+                    <li><a href="#contact-section">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="burger" onclick="toggleMenu()">
+                <span></span>
+            </div>
+        </div>
+        <div class="hero-section" id="hero-section">
+            <div class="intro-goals">
+                <h1>Hi!, I am <span data-testid="slackDisplayName">DevOHNI</span></h1>
+                <h2>My goals for the next 2 years is to become a tech-entrepreneur and build MVP Products that scales. This is my portfolio, journaling projects I have developed.</h2>
+            </div>
+            <div class="my-image" >
+                <img src="./assests/slack-picture.png" alt="" data-testid="slackProfilePicture">
+            </div>
+        </div>
+        <div class="projects-section" id="projects-section">
+            <h1>Projects</h1>
+            <div class="portfolio-website">
+                <h2>DevOHNI Portfolio</h2>
+                <ul>
+                    <li>
+                        <p>This portfolio website is one of the project I worked on while participating in <a href="http://hng.tech/learn" target="_blank"   data-testid="hngLink" >HNG Internship program</a> </p>
+                    </li>
+                    <li>During the course of building this website I also learnt about <a href="http://keyword.dog/" target="_blank" data-testid="keywordLink">keyword.dog</a> and <a href="http://scrapeanyweb.site/" target="_blank" data-testid="scrapeanywebLink">scrapeanyweb.site</a>
+                    </li>
+                <hr>
+                <p></p>
+                </ul>
+            </div>
+        </div>
+        <div class="contact-section" id="contact-section">
+            <h1>Do you need a developer?</h1>
+            <p>I'm HIM!. I am the developer you need!. Contact ME through my email <span data-testid="slackEmail" >olamideoni591@gmail.com</span></p>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
